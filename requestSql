@@ -1,0 +1,84 @@
+SELECT `mois_charge`, SUM(`montant_charge`) FROM `charges` WHERE `categorie_charge` = 3 GROUP BY `mois_charge`
+SELECT `mois_charge`, SUM(`montant_charge`) FROM `charges` WHERE `motif_charge` like '%courses%' AND `categorie_charge` = 3 GROUP BY `mois_charge`
+SELECT `mois_charge`, SUM(`montant_charge`) FROM `charges` WHERE `motif_charge` like '%essence%' AND `categorie_charge` = 2 GROUP BY `mois_charge`
+SELECT `mois_charge`, SUM(`montant_charge`) FROM `charges` WHERE `motif_charge` like '%essence%' GROUP BY `mois_charge`
+
+INSERT INTO `charges` (`id_charge`, `categorie_charge`, `date_charge`, `mois_charge`, `montant_charge`, `motif_charge`, `timestamp_charge`) VALUES
+(900, 3, '2018-11-26 00:00:00', 'Janvier-19', 0, 'Loyer', '2019-06-19 20:57:20'),
+(901, 3, '2018-11-26 00:00:00', 'Fevrier-19', 0, 'courses', '2019-06-21 17:03:38'),
+(902, 3, '2018-11-26 00:00:00', 'Mars-19', 0, 'courses', '2019-06-21 17:03:45'),
+(903, 3, '2018-11-26 00:00:00', 'Avril-19', 0, 'courses', '2019-06-21 17:03:51');
+
+
+
+INSERT INTO `charges` (`id_charge`, `categorie_charge`, `date_charge`, `mois_charge`, `montant_charge`, `motif_charge`, `timestamp_charge`) VALUES
+(1, 0, '2018-11-26 00:00:00', 'Janvier-19', -780, 'Loyer', '2019-06-19 20:57:20'),
+(2, 3, '2018-11-26 00:00:00', 'Janvier-19', -10, 'courses', '2019-06-21 17:03:38'),
+(3, 3, '2018-11-26 00:00:00', 'Janvier-19', -40, 'courses', '2019-06-21 17:03:45'),
+(4, 3, '2018-11-26 00:00:00', 'Janvier-19', -70, 'courses', '2019-06-21 17:03:51');
+
+INSERT INTO `charges` (`id_charge`, `categorie_charge`, `date_charge`, `mois_charge`, `montant_charge`, `motif_charge`, `timestamp_charge`) VALUES
+(5, 0, '2018-11-26 00:00:00', 'Fevrier-19', -890, 'Loyer', '2019-06-19 20:57:20'),
+(6, 3, '2018-11-26 00:00:00', 'Fevrier-19', -20, 'courses', '2019-06-21 17:03:38'),
+(7, 3, '2018-11-26 00:00:00', 'Fevrier-19', -10, 'courses', '2019-06-21 17:03:45'),
+(8, 3, '2018-11-26 00:00:00', 'Fevrier-19', -70, 'courses', '2019-06-21 17:03:51');
+
+INSERT INTO `charges` (`id_charge`, `categorie_charge`, `date_charge`, `mois_charge`, `montant_charge`, `motif_charge`, `timestamp_charge`) VALUES
+(9, 0, '2018-11-26 00:00:00', 'Mars-19', -790, 'Loyer', '2019-06-19 20:57:20'),
+(10, 3, '2018-11-26 00:00:00', 'Mars-19', -50, 'courses', '2019-06-21 17:03:38'),
+(11, 3, '2018-11-26 00:00:00', 'Mars-19', -30, 'courses', '2019-06-21 17:03:45'),
+(12, 3, '2018-11-26 00:00:00', 'Mars-19', -70, 'courses', '2019-06-21 17:03:51');
+
+INSERT INTO `charges` (`id_charge`, `categorie_charge`, `date_charge`, `mois_charge`, `montant_charge`, `motif_charge`, `timestamp_charge`) VALUES
+(13, 0, '2018-11-26 00:00:00', 'Avril-19', -780, 'Loyer', '2019-06-19 20:57:20'),
+(14, 3, '2018-11-26 00:00:00', 'Avril-19', -10, 'courses', '2019-06-21 17:03:38'),
+(15, 3, '2018-11-26 00:00:00', 'Avril-19', -40, 'courses', '2019-06-21 17:03:45'),
+(16, 3, '2018-11-26 00:00:00', 'Avril-19', -70, 'courses', '2019-06-21 17:03:51');
+
+INSERT INTO `charges` (`id_charge`, `categorie_charge`, `date_charge`, `mois_charge`, `montant_charge`, `motif_charge`, `timestamp_charge`) VALUES
+(17, 0, '2018-11-26 00:00:00', 'Mai-19', -890, 'Loyer', '2019-06-19 20:57:20'),
+(18, 3, '2018-11-26 00:00:00', 'Mai-19', -20, 'courses', '2019-06-21 17:03:38'),
+(19, 3, '2018-11-26 00:00:00', 'Mai-19', -10, 'courses', '2019-06-21 17:03:45'),
+(20, 3, '2018-11-26 00:00:00', 'Mai-19', -70, 'courses', '2019-06-21 17:03:51');
+
+INSERT INTO `charges` (`id_charge`, `categorie_charge`, `date_charge`, `mois_charge`, `montant_charge`, `motif_charge`, `timestamp_charge`) VALUES
+(21, 0, '2018-11-26 00:00:00', 'Juin-19', -790, 'Loyer', '2019-06-19 20:57:20'),
+(22, 3, '2018-11-26 00:00:00', 'Juin-19', -50, 'courses', '2019-06-21 17:03:38'),
+(23, 3, '2018-11-26 00:00:00', 'Juin-19', -30, 'courses', '2019-06-21 17:03:45'),
+(24, 3, '2018-11-26 00:00:00', 'Juin-19', -70, 'courses', '2019-06-21 17:03:51');
+
+INSERT INTO `charges` (`id_charge`, `categorie_charge`, `date_charge`, `mois_charge`, `montant_charge`, `motif_charge`, `timestamp_charge`) VALUES
+(25, 0, '2018-11-26 00:00:00', 'Juillet-19', -780, 'Loyer', '2019-06-19 20:57:20'),
+(26, 3, '2018-11-26 00:00:00', 'Juillet-19', -10, 'courses', '2019-06-21 17:03:38'),
+(27, 3, '2018-11-26 00:00:00', 'Juillet-19', -40, 'courses', '2019-06-21 17:03:45'),
+(28, 3, '2018-11-26 00:00:00', 'Juillet-19', -70, 'courses', '2019-06-21 17:03:51');
+
+INSERT INTO `charges` (`id_charge`, `categorie_charge`, `date_charge`, `mois_charge`, `montant_charge`, `motif_charge`, `timestamp_charge`) VALUES
+(29, 0, '2018-11-26 00:00:00', 'Aout-19', -890, 'Loyer', '2019-06-19 20:57:20'),
+(30, 3, '2018-11-26 00:00:00', 'Aout-19', -20, 'courses', '2019-06-21 17:03:38'),
+(31, 3, '2018-11-26 00:00:00', 'Aout-19', -10, 'courses', '2019-06-21 17:03:45'),
+(32, 3, '2018-11-26 00:00:00', 'Aout-19', -70, 'courses', '2019-06-21 17:03:51');
+
+INSERT INTO `charges` (`id_charge`, `categorie_charge`, `date_charge`, `mois_charge`, `montant_charge`, `motif_charge`, `timestamp_charge`) VALUES
+(33, 0, '2018-11-26 00:00:00', 'Septembre-19', -790, 'Loyer', '2019-06-19 20:57:20'),
+(34, 3, '2018-11-26 00:00:00', 'Septembre-19', -50, 'courses', '2019-06-21 17:03:38'),
+(35, 3, '2018-11-26 00:00:00', 'Septembre-19', -30, 'courses', '2019-06-21 17:03:45'),
+(36, 3, '2018-11-26 00:00:00', 'Septembre-19', -70, 'courses', '2019-06-21 17:03:51');
+
+INSERT INTO `charges` (`id_charge`, `categorie_charge`, `date_charge`, `mois_charge`, `montant_charge`, `motif_charge`, `timestamp_charge`) VALUES
+(37, 0, '2018-11-26 00:00:00', 'Octobre-19', -780, 'Loyer', '2019-06-19 20:57:20'),
+(38, 3, '2018-11-26 00:00:00', 'Octobre-19', -10, 'courses', '2019-06-21 17:03:38'),
+(39, 3, '2018-11-26 00:00:00', 'Octobre-19', -40, 'courses', '2019-06-21 17:03:45'),
+(40, 3, '2018-11-26 00:00:00', 'Octobre-19', -70, 'courses', '2019-06-21 17:03:51');
+
+INSERT INTO `charges` (`id_charge`, `categorie_charge`, `date_charge`, `mois_charge`, `montant_charge`, `motif_charge`, `timestamp_charge`) VALUES
+(41, 0, '2018-11-26 00:00:00', 'Novembre-19', -890, 'Loyer', '2019-06-19 20:57:20'),
+(42, 3, '2018-11-26 00:00:00', 'Novembre-19', -20, 'courses', '2019-06-21 17:03:38'),
+(43, 3, '2018-11-26 00:00:00', 'Novembre-19', -10, 'courses', '2019-06-21 17:03:45'),
+(44, 3, '2018-11-26 00:00:00', 'Novembre-19', -70, 'courses', '2019-06-21 17:03:51');
+
+INSERT INTO `charges` (`id_charge`, `categorie_charge`, `date_charge`, `mois_charge`, `montant_charge`, `motif_charge`, `timestamp_charge`) VALUES
+(45, 0, '2018-11-26 00:00:00', 'Decembre-19', -790, 'Loyer', '2019-06-19 20:57:20'),
+(46, 3, '2018-11-26 00:00:00', 'Decembre-19', -50, 'courses', '2019-06-21 17:03:38'),
+(47, 3, '2018-11-26 00:00:00', 'Decembre-19', -30, 'courses', '2019-06-21 17:03:45'),
+(48, 3, '2018-11-26 00:00:00', 'Decembre-19', -70, 'courses', '2019-06-21 17:03:51');
